@@ -44,3 +44,10 @@ models/*.pkl
 results/risk_stratification_results.csv
 results/selected_probe_gene_mapping.csv
 results/cross_validation_results.csv
+# Exclude all local datasets by default
+data/
+
+# Allow only the public GEO dataset files
+!data/GSE33000_AD_vs_control.csv
+!data/GSE33000_series_matrix.txt.gz
+!data/GPL4372.annot.gz
