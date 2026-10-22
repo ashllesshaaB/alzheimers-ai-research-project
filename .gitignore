@@ -1,0 +1,46 @@
+# Python environment and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Restricted ADNI data — do not upload
+data/adni/
+data/ADNI/
+data/ADNIMERGE/
+data/MRI/
+data/PET/
+**/ADNIMERGE2_extracted/
+**/ADNIMERGE2.tar.gz
+**/MRI.zip
+**/PET.zip
+**/ADNIMERGE.zip
+
+# Local secrets and settings
+.env
+.env.*
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+# Never upload ADNI data or archives anywhere in the project
+**/*ADNI*
+**/*adni*
+**/*ADNIMERGE*
+**/*MRI.zip
+**/*PET.zip
+**/*.tar.gz
+
+# Exclude local model caches and generated environments
+.venv/
+venv/
+env/
+# Temporarily exclude saved models until cleared for sharing
+models/*.pkl
+results/risk_stratification_results.csv
+results/selected_probe_gene_mapping.csv
+results/cross_validation_results.csv
